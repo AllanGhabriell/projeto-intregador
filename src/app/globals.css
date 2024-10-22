@@ -21,6 +21,7 @@ header {
 }
 header h1 {
   text-align: center;
+  padding-top: 10px;
 }
 nav {
   background-color: rgba(0, 0, 0, 0.561);
@@ -78,11 +79,67 @@ main {
   margin: auto;
   padding: 10px;
 }
+main h1 {
+  color: #0021a3;
+  font-size: 20px;
+}
+main h2 {
+  margin-top: 10px;
+  font-size: 16px;
+}
 main p{
  margin: 10px;
+ text-indent: 10px;
+}
+strong a {
+  text-decoration: none;
+  color: black;
+}
+#shtml:hover {
+  color: #ff2f00;
+  text-decoration: underline;
+}
+#scss:hover {
+  color: #0021a3;
+  text-decoration: underline;
+}
+#sjs:hover {
+  color: #ceaf00;
+  text-decoration: underline;
 }
 ul {
   list-style-position: inside;
+}
+form {
+  background-color: #181E40;
+  padding: 10px;
+  border-radius: 15px;
+}
+label {
+  color: white;
+  font-size: 14px;
+}
+textarea {
+  width: 80%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px 0px 0px 10px;
+  background-color: #4150A6;
+  color: white;
+  resize: none;
+  text-align: left;
+  border: none;
+  border-radius: 4px;
+}
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.658);
+}
+button {
+  border: none;
+  background-color: #BFA62A;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
 }
 footer {
   background-color: black;
