@@ -3,19 +3,89 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --cor1: #007BFF; /* Azul Principal - Fundo do site, cabeçalho e rodapé */
+  --cor2: #FFD700; /* Amarelo Secundário - Destaques e chamadas à ação */
+  --cor3: #FF5733; /* Laranja de Acento - Links e botões que precisam chamar atenção */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  margin: 0px;
+  padding: 0px;
 }
-
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: black;
+  color: white;
+}
+header h1 {
+  text-align: center;
+}
+nav {
+  background-color: rgba(0, 0, 0, 0.561);
+  margin-top: 10px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  padding-left: 10px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 3px 5px 3px 5px;
+  transition-duration: .5s;
+}
+#inicial {
+  background-color: rgb(0, 159, 159);
+  border-top-left-radius: 5px;
+}
+#inicial:hover {
+  background-color: aqua;
+  border-top-left-radius: 10px;
+}
+#html {
+  background-color: #a41e00;
+  border-top-left-radius: 5px;
+}
+#html:hover {
+  background-color: red;
+  border-top-left-radius: 10px;
+}
+#css {
+  background-color: #0051a8;
+  border-top-left-radius: 5px;
+}
+#css:hover {
+  background-color: #007BFF;
+  border-top-left-radius: 10px;
+}
+#js {
+  background-color: #ceaf00;
+  border-top-left-radius: 5px;
+}
+#js:hover {
+  background-color: #FFD700;
+  border-top-left-radius: 10px;
+}
+#login {
+  height: 5vh;
+  transform: translate(-50%, -50%);
+  float: right;
+  padding-right: 10px;
+}
+main {
+  width: 400px;
+  margin: auto;
+  padding: 10px;
+}
+main p{
+ margin: 10px;
+}
+ul {
+  list-style-position: inside;
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
 }
