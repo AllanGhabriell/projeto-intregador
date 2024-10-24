@@ -30,7 +30,6 @@ nav {
   background-color: rgba(0, 0, 0, 0.561);
   margin-top: 10px;
   padding-left: 5px;
-  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -78,8 +77,34 @@ nav a {
   background-color: #FFD700;
   border-top-left-radius: 10px;
 }
-#nav_login {
-  flex-basis: 50px;
+#nav_pesquisa {
+  width: 30%;
+  text-align: center;
+}
+#barrapesquisa {
+  padding: 3px;
+  border-top-left-radius: 5px;
+  width: 70%;
+  border: none;
+}
+#btpesquisa {
+  padding: 2px;
+  border-top-right-radius: 5px;
+  border: none;
+  background-color: white;
+}
+#btpesquisa:active {
+  background-color: gray;
+  color: white;
+}
+#login {
+  background-color: #6e6e6e;
+  border-top-right-radius: 5px;
+  margin-right: 5px;
+}
+#login:active {
+  background-color: #949494;
+  border-top-right-radius: 10px;
 }
 main {
   width: 90vw;
@@ -138,17 +163,17 @@ textarea {
   border: none;
   border-radius: 4px;
 }
-::-webkit-input-placeholder {
+textarea::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.658);
 }
-button {
+#btcoment {
   border: none;
   background-color: #BFA62A;
   color: white;
   padding: 5px;
   border-radius: 10px;
 }
-button:active {
+#btcoment:active {
   background-color: #7f6f1e;
 }
 footer {
@@ -156,9 +181,34 @@ footer {
   width: 100vw;
   color: white;
   text-align: center;
+  position: fixed;
+}
+/* Configuração para barra de pesquisa */
+@media (max-width: 320px) {
+  #nav_pesquisa {
+    display: none;
+  }
 }
 /* Tela média (tablets) */
 @media (min-width: 420px) and (max-width: 991px) {
+  nav {
+    cursor: pointer;
+  }
+  nav a {
+    font-size: 18px;
+  }
+  #nav_pesquisa {
+    width: 30%;
+  }
+  #login {
+    background-color: #6e6e6e;
+    border-top-right-radius: 5px;
+    margin-right: 30px;
+  }
+  #login:hover {
+    background-color: #949494;
+    border-top-right-radius: 10px;
+  }
   main {
     width: 80vw;
   }
@@ -213,6 +263,18 @@ footer {
 }
 /* Tela grande (desktops pequenos) */
 @media (min-width: 992px) and (max-width: 1200px) {
+  nav a {
+    font-size: 18px;
+  }
+  #login {
+    background-color: #6e6e6e;
+    border-top-right-radius: 5px;
+    margin-right: 30px;
+  }
+  #login:hover {
+    background-color: #949494;
+    border-top-right-radius: 10px;
+  }
   main {
     width: 80vw;
   }
@@ -270,6 +332,18 @@ footer {
 }
 /* Tela extra grande (desktops grandes) */
 @media (min-width: 1201px) {
+  nav a {
+    font-size: 18px;
+  }
+  #login {
+    background-color: #6e6e6e;
+    border-top-right-radius: 5px;
+    margin-right: 30px;
+  }
+  #login:hover {
+    background-color: #949494;
+    border-top-right-radius: 10px;
+  }
   main {
     width: 60vw;
   }
