@@ -108,6 +108,9 @@ pre {
   padding: 10px;
   margin-bottom: 5px;
   border-radius: 10px;
+  white-space: pre;
+  overflow-x: auto;
+  max-width: 100%;
 }
 ul {
   list-style-position: inside;
