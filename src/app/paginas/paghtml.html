@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../globals.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle" />
+    <style>
+        main h1 {
+            color: #ff3c11;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Code One</h1>
+        <nav>
+            <div id="nav_menu">
+                <a href="index.html" id="inicial">Inicial</a>
+                <a href="paghtml.html" id="html">Html</a>
+                <a href="pagcss.html" id="css">Css</a>
+                <a href="pagjs.html" id="jsmob">Js</a>
+                <a href="pagjs.html" id="js">JavaScript</a>
+            </div>
+            <div id="nav_login">
+                <img src="/public/imagens/usericon.svg" alt="">
+            </div>
+    </nav>
+    </header>
+    <main>
+        <h1>Introdução ao HTML</h1>
+
+        <p>HTML, ou HyperText Markup Language, é a linguagem de marcação fundamental para a criação de páginas web. É o alicerce de qualquer site, permitindo estruturar o conteúdo e definir como ele será apresentado aos usuários. Aprender HTML é o primeiro passo para se tornar um desenvolvedor web competente.</p>
+        
+        <h2>Por que Aprender HTML?</h2>
+        <p>HTML é essencial para qualquer pessoa interessada em web design ou desenvolvimento. Ele permite que você:</p>
+        <ul>
+            <li>Estruture informações de forma lógica e semântica.</li>
+            <li>Insira imagens, vídeos e outros elementos multimídia.</li>
+            <li>Crie links e navegação entre diferentes páginas.</li>
+            <li>Integre CSS e JavaScript para melhorar a estética e a interatividade das suas páginas.</li>
+        </ul>
+        
+        <h2>Tags HTML Comuns</h2>
+        <p>O HTML é composto por diversas tags, que são elementos usados para estruturar o conteúdo. Aqui estão algumas das tags mais comuns:</p>
+        
+        <h3>1. Tag <code>&lt;html&gt;</code></h3>
+        <p>A tag <code>&lt;html&gt;</code> é a raiz de um documento HTML. Ela indica ao navegador que o conteúdo a seguir está em HTML.</p>
+        <pre><code>&lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Meu Site&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Bem-vindo ao Meu Site&lt;/h1&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;</code></pre>
+    
+        <h3>2. Tag <code>&lt;head&gt;</code></h3>
+        <p>A tag <code>&lt;head&gt;</code> contém informações sobre o documento, como o título e links para arquivos CSS. Além disso, é onde você pode incluir metadados que ajudam os motores de busca a indexar a sua página.</p>
+        
+        <h3>3. Tag <code>&lt;title&gt;</code></h3>
+        <p>A tag <code>&lt;title&gt;</code> define o título da página, que aparece na aba do navegador. Um bom título é essencial para SEO.</p>
+        
+        <h3>4. Tag <code>&lt;body&gt;</code></h3>
+        <p>A tag <code>&lt;body&gt;</code> contém o conteúdo visível da página, como textos, imagens e links. Tudo o que você deseja que os usuários vejam deve estar dentro dessa tag.</p>
+        
+        <h3>5. Tag <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code></h3>
+        <p>Essas tags são usadas para criar cabeçalhos, sendo <code>&lt;h1&gt;</code> o mais importante e <code>&lt;h6&gt;</code> o menos importante. É recomendável usar apenas um <code>&lt;h1&gt;</code> por página para indicar o título principal.</p>
+        <pre><code>&lt;h1&gt;Título Principal&lt;/h1&gt;
+    &lt;h2&gt;Título Secundário&lt;/h2&gt;
+    &lt;h3&gt;Título Terciário&lt;/h3&gt;</code></pre>
+    
+        <h3>6. Tag <code>&lt;p&gt;</code></h3>
+        <p>A tag <code>&lt;p&gt;</code> é utilizada para criar parágrafos de texto. A separação em parágrafos melhora a legibilidade.</p>
+        <pre><code>&lt;p&gt;Este é um parágrafo de texto.&lt;/p&gt;</code></pre>
+    
+        <h3>7. Tag <code>&lt;a&gt;</code></h3>
+        <p>A tag <code>&lt;a&gt;</code> cria hyperlinks, permitindo que os usuários naveguem entre páginas. O atributo <code>href</code> especifica o destino do link.</p>
+        <pre><code>&lt;a href="https://www.exemplo.com"&gt;Visite nosso site!&lt;/a&gt;</code></pre>
+    
+        <h3>8. Tag <code>&lt;img&gt;</code></h3>
+        <p>A tag <code>&lt;img&gt;</code> insere imagens em uma página. O atributo <code>src</code> especifica a fonte da imagem e o atributo <code>alt</code> fornece uma descrição para acessibilidade.</p>
+        <pre><code>&lt;img src="imagem.jpg" alt="Descrição da imagem"&gt;</code></pre>
+    
+        <h3>9. Tag <code>&lt;ul&gt;</code> e <code>&lt;li&gt;</code></h3>
+        <p>As tags <code>&lt;ul&gt;</code> (lista não ordenada) e <code>&lt;li&gt;</code> (item da lista) são usadas para criar listas. Para listas ordenadas, use <code>&lt;ol&gt;</code>.</p>
+        <pre><code>&lt;ul&gt;
+        &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;/ul&gt;</code></pre>
+    
+        <h3>10. Tag <code>&lt;div&gt;</code></h3>
+        <p>A tag <code>&lt;div&gt;</code> é um contêiner genérico usado para agrupar outros elementos. É frequentemente usada em conjunto com CSS para estilização.</p>
+        <pre><code>&lt;div class="container"&gt;
+            &lt;p&gt;Este é um parágrafo dentro de uma div.&lt;/p&gt;
+        &lt;/div&gt;</code></pre>
+    
+        <h3>11. Tag <code>&lt;span&gt;</code></h3>
+        <p>A tag <code>&lt;span&gt;</code> é um contêiner em linha usado para estilizar partes de texto. Diferentemente da <code>&lt;div&gt;</code>, não cria quebras de linha.</p>
+        <pre><code>&lt;p&gt;Este é um &lt;span style="color: red;"&gt;texto vermelho&lt;/span&gt; dentro de um parágrafo.&lt;/p&gt;</code></pre>
+    
+        <h2>Atributos HTML</h2>
+        <p>Os atributos fornecem informações adicionais sobre as tags. Eles são sempre definidos dentro da tag e geralmente vêm em pares de chave-valor.</p>
+        
+        <h3>1. Atributo <code>class</code></h3>
+        <p>O atributo <code>class</code> é usado para aplicar estilos CSS a elementos específicos. Você pode ter várias classes separadas por espaços.</p>
+        <pre><code>&lt;div class="container highlight"&gt;Conteúdo aqui&lt;/div&gt;</code></pre>
+    
+        <h3>2. Atributo <code>id</code></h3>
+        <p>O atributo <code>id</code> é usado para identificar um único elemento na página. Cada <code>id</code> deve ser único.</p>
+        <pre><code>&lt;h2 id="sobre"&gt;Sobre Nós&lt;/h2&gt;</code></pre>
+    
+        <h3>3. Atributo <code>style</code></h3>
+        <p>O atributo <code>style</code> permite aplicar estilos CSS diretamente em um elemento. Contudo, é uma boa prática evitar seu uso em favor de estilos externos ou internos.</p>
+        <pre><code>&lt;p style="color: blue;"&gt;Texto em azul&lt;/p&gt;</code></pre>
+    
+        <h2>Boas Práticas em HTML</h2>
+        <p>Ao escrever HTML, é importante seguir algumas boas práticas para garantir que o código seja limpo e compreensível:</p>
+        <ul>
+            <li>Utilize indentação para organizar o código e facilitar a leitura.</li>
+            <li>Use comentários para explicar partes do código quando necessário. Os comentários são feitos com <code>&lt;!-- comentário aqui --&gt;</code>.</li>
+            <li>Mantenha uma estrutura semântica, usando tags que transmitam o significado do conteúdo, como <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, e <code>&lt;footer&gt;</code>.</li>
+            <li>Valide seu código HTML usando ferramentas como o W3C Validator para garantir que esteja livre de erros.</li>
+        </ul>
+    
+        <h2>Como Aprender HTML</h2>
+        <p>Aprender HTML pode ser uma experiência gratificante. Aqui estão algumas dicas para começar:</p>
+        
+        <ul>
+            <li><strong>Recursos Online:</strong> Utilize plataformas como Codecademy, FreeCodeCamp ou W3Schools, que oferecem tutoriais interativos e exercícios práticos.</li>
+            <li><strong>Livros e E-books:</strong> Existem muitos livros que ensinam HTML desde o básico até o avançado, como "HTML and CSS: Design and Build Websites" de Jon Duckett.</li>
+            <li><strong>Pratique:</strong> Crie projetos pequenos para aplicar o que aprendeu. Por exemplo, você pode tentar construir uma página pessoal ou um portfólio.</li>
+            <li><strong>Participe de Comunidades:</strong> Junte-se a fóruns e grupos de discussão sobre desenvolvimento web, como Stack Overflow ou grupos no Reddit. Essas comunidades são ótimas para tirar dúvidas e compartilhar conhecimentos.</li>
+        </ul>
+    
+        <h2>Conclusão</h2>
+        <p>O HTML é a base de tudo que você vê na web. Aprendê-lo abre as portas para o desenvolvimento web e permite que você crie experiências digitais atraentes. Com o conhecimento em HTML, você pode avançar para aprender CSS e JavaScript, expandindo suas habilidades e possibilidades na criação de sites. Comece a praticar hoje mesmo e explore o vasto mundo do desenvolvimento web!</p>
+    <form action="" id="coment">
+        <label for="icoment">Deixe um comentario:</label>
+        <br>
+        <textarea name="" id="icoment" placeholder="Seu comentario" maxlength="150" minlength="1"></textarea>
+        <br>
+        <button>Enviar</button>
+    </form>                 
+    </main>
+    <footer>Criado por Allan e Miguel!</footer>
+</body>
+</html>

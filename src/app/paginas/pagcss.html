@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../globals.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle" />
+    <style>
+        main h1 {
+            color: #0004ff;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Code One</h1>
+        <nav>
+            <div id="nav_menu">
+                <a href="index.html" id="inicial">Inicial</a>
+                <a href="paghtml.html" id="html">Html</a>
+                <a href="pagcss.html" id="css">Css</a>
+                <a href="pagjs.html" id="jsmob">Js</a>
+                <a href="pagjs.html" id="js">JavaScript</a>
+            </div>
+            <div id="nav_login">
+                <img src="/public/imagens/usericon.svg" alt="">
+            </div>
+    </nav>
+    </header>
+    <main>
+        <h1>CSS: Cascading Style Sheets</h1>
+    
+        <p>CSS, ou Cascading Style Sheets, é uma linguagem de estilo utilizada para descrever a apresentação de documentos HTML. Com o CSS, você pode controlar a aparência e o layout das páginas da web de maneira eficiente. O CSS permite aplicar estilos, como cores, fontes, espaçamento e layout, separando a estrutura do conteúdo (HTML) da apresentação.</p>
+    
+        <h2>Por que Aprender CSS?</h2>
+        <p>Aprender CSS é essencial para qualquer desenvolvedor web, pois proporciona controle total sobre o design das páginas. Aqui estão algumas razões pelas quais você deve aprender CSS:</p>
+        <ul>
+            <li><strong>Estilização:</strong> CSS permite que você estilize elementos HTML com facilidade, melhorando a estética da sua página.</li>
+            <li><strong>Responsividade:</strong> Com CSS, você pode criar layouts que se adaptam a diferentes tamanhos de tela, proporcionando uma melhor experiência para o usuário em dispositivos móveis e desktops.</li>
+            <li><strong>Eficiência:</strong> O uso de CSS reduz o tamanho do código HTML e melhora a manutenção, já que você pode alterar o estilo de vários elementos em um único arquivo CSS.</li>
+            <li><strong>Acessibilidade:</strong> CSS pode ajudar a tornar sua página mais acessível, permitindo que você controle o contraste e a legibilidade do texto.</li>
+        </ul>
+    
+        <h2>Principais Propriedades do CSS</h2>
+        <p>Existem várias propriedades CSS que você pode usar para estilizar suas páginas. Aqui estão algumas das mais comuns:</p>
+        
+        <h3>1. Cores e Fundos</h3>
+        <p>A propriedade <code>color</code> define a cor do texto, enquanto <code>background-color</code> define a cor de fundo de um elemento.</p>
+        <pre><code>p {
+        color: blue; /* Define a cor do texto como azul */
+    }
+    
+    div {
+        background-color: lightgray; /* Define a cor de fundo como cinza claro */
+    }</code></pre>
+    
+        <h3>2. Tipografia</h3>
+        <p>As propriedades de tipografia controlam como o texto aparece na página. Você pode usar propriedades como <code>font-family</code>, <code>font-size</code>, e <code>font-weight</code>.</p>
+        <pre><code>h1 {
+        font-family: 'Arial', sans-serif; /* Define a família de fontes */
+        font-size: 36px; /* Define o tamanho da fonte como 36 pixels */
+        font-weight: bold; /* Define a fonte como negrito */
+    }</code></pre>
+    
+        <h3>3. Margens e Preenchimentos</h3>
+        <p>As propriedades <code>margin</code> e <code>padding</code> controlam o espaço externo e interno de um elemento, respectivamente.</p>
+        <pre><code>div {
+        margin: 20px; /* Define uma margem de 20 pixels em todos os lados */
+        padding: 10px; /* Define um preenchimento de 10 pixels em todos os lados */
+    }</code></pre>
+    
+        <h3>4. Layout</h3>
+        <p>O CSS oferece diferentes modelos de layout, como <code>flexbox</code> e <code>grid</code>, que ajudam na organização dos elementos na página.</p>
+        <pre><code>.container {
+        display: flex; /* Cria um layout flexível */
+        justify-content: space-between; /* Espaça os itens uniformemente */
+    }
+    
+    .grid {
+        display: grid; /* Cria um layout de grade */
+        grid-template-columns: repeat(3, 1fr); /* Cria três colunas de igual largura */
+    }</code></pre>
+    
+        <h3>5. Bordas e Sombras</h3>
+        <p>Você pode adicionar bordas e sombras aos elementos para melhor definição visual. Use <code>border</code> e <code>box-shadow</code> para esse propósito.</p>
+        <pre><code>div {
+        border: 2px solid black; /* Adiciona uma borda preta de 2 pixels */
+        box-shadow: 3px 3px 5px gray; /* Adiciona uma sombra ao elemento */
+    }</code></pre>
+    
+        <h3>6. Transições e Animações</h3>
+        <p>O CSS também permite criar animações e transições suaves para melhorar a experiência do usuário. Use <code>transition</code> para transições e <code>@keyframes</code> para animações.</p>
+        <pre><code>button {
+        transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+    }
+    
+    button:hover {
+        background-color: yellow; /* Muda a cor de fundo ao passar o mouse */
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0; /* Começa invisível */
+        }
+        to {
+            opacity: 1; /* Termina visível */
+        }
+    }
+    
+    .fade {
+        animation: fadeIn 2s; /* Aplica a animação de desvanecimento */
+    }</code></pre>
+    
+        <h2>Dicas para Aprender CSS</h2>
+        <p>Para se tornar proficiente em CSS, considere as seguintes dicas:</p>
+        <ul>
+            <li><strong>Pratique:</strong> A melhor maneira de aprender CSS é praticar. Crie pequenos projetos e experimente diferentes propriedades e estilos.</li>
+            <li><strong>Utilize Recursos Online:</strong> Há muitos recursos gratuitos disponíveis, como cursos online, vídeos e tutoriais que podem ajudar você a entender melhor o CSS.</li>
+            <li><strong>Experimente com Ferramentas:</strong> Ferramentas como o DevTools do navegador permitem que você experimente estilos em tempo real, ajudando na aprendizagem.</li>
+            <li><strong>Estude Layouts Responsivos:</strong> Aprenda sobre técnicas como media queries para criar layouts que se ajustem a diferentes dispositivos e tamanhos de tela.</li>
+            <li><strong>Inspire-se em Outros Projetos:</strong> Analise sites que você admira e tente replicar alguns de seus estilos para entender como foram criados.</li>
+        </ul>
+    
+        <h2>Conclusão</h2>
+        <p>O CSS é uma habilidade essencial para qualquer desenvolvedor web. Com o conhecimento em CSS, você pode criar designs impressionantes e responsivos, melhorando a experiência do usuário e a funcionalidade das suas páginas. Comece a praticar hoje e leve suas habilidades de desenvolvimento web para o próximo nível!</p>
+        <form action="" id="coment">
+            <label for="icoment">Deixe um comentario:</label>
+            <br>
+            <textarea name="" id="icoment" placeholder="Seu comentario" maxlength="150" minlength="1"></textarea>
+            <br>
+            <button>Enviar</button>
+        </form>            
+    </main>
+    <footer>Criado por Allan e Miguel!</footer>
+</body>
+</html>

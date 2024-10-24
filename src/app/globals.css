@@ -10,6 +10,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -18,6 +19,7 @@ header {
   background-color: black;
   color: white;
   width: 100vw;
+  box-shadow: -2px 2px 7px 1px rgba(0, 0, 0, 0.511)
 }
 header h1 {
   text-align: center;
@@ -26,21 +28,23 @@ header h1 {
 nav {
   background-color: rgba(0, 0, 0, 0.561);
   margin-top: 10px;
-  padding-bottom: 5px;
+  padding-left: 5px;
   cursor: pointer;
-  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 nav a {
   color: white;
   text-decoration: none;
-  padding: 3px 5px;
+  padding: 3px 5px 0px 5px;
   transition-duration: 0.5s;
 }
 #inicial {
   background-color: rgb(0, 159, 159);
   border-top-left-radius: 5px;
 }
-#inicial:hover {
+#inicial:active {
   background-color: aqua;
   border-top-left-radius: 10px;
 }
@@ -48,7 +52,7 @@ nav a {
   background-color: #a41e00;
   border-top-left-radius: 5px;
 }
-#html:hover {
+#html:active {
   background-color: red;
   border-top-left-radius: 10px;
 }
@@ -56,23 +60,25 @@ nav a {
   background-color: #0051a8;
   border-top-left-radius: 5px;
 }
-#css:hover {
+#css:active {
   background-color: #007BFF;
   border-top-left-radius: 10px;
 }
 #js {
+  display: none;
   background-color: #ceaf00;
   border-top-left-radius: 5px;
 }
-#js:hover {
+#jsmob {
+  background-color: #ceaf00;
+  border-top-left-radius: 5px;
+}
+#jsmob:active {
   background-color: #FFD700;
   border-top-left-radius: 10px;
 }
-#login {
-  height: 5vh;
-  transform: translate(-50%, -50%);
-  float: right;
-  padding-right: 10px;
+#nav_login {
+  flex-basis: 50px;
 }
 main {
   width: 90vw;
@@ -95,22 +101,17 @@ strong a {
   text-decoration: none;
   color: black;
 }
-#shtml:hover {
-  color: #ff2f00;
-  text-decoration: underline;
-}
-#scss:hover {
-  color: #0021a3;
-  text-decoration: underline;
-}
-#sjs:hover {
-  color: #ceaf00;
-  text-decoration: underline;
+pre {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 10px;
 }
 ul {
   list-style-position: inside;
 }
-form {
+form#coment {
   background-color: #181E40;
   padding: 10px;
   border-radius: 15px;
@@ -141,18 +142,180 @@ button {
   padding: 5px;
   border-radius: 10px;
 }
+button:active {
+  background-color: #7f6f1e;
+}
 footer {
   background-color: black;
+  width: 100vw;
   color: white;
   text-align: center;
 }
-/* Tela média (tablets)
-@media (min-width: 768px) and (max-width: 991px) {
+/* Tela média (tablets) */
+@media (min-width: 420px) and (max-width: 991px) {
+  main {
+    width: 80vw;
+  }
+  #inicial {
+    background-color: rgb(0, 159, 159);
+    border-top-left-radius: 5px;
+  }
+  #inicial:hover {
+    background-color: aqua;
+    border-top-left-radius: 10px;
+  }
+  #html {
+    background-color: #a41e00;
+    border-top-left-radius: 5px;
+  }
+  #html:hover {
+    background-color: red;
+    border-top-left-radius: 10px;
+  }
+  #css {
+    background-color: #0051a8;
+    border-top-left-radius: 5px;
+  }
+  #css:hover {
+    background-color: #007BFF;
+    border-top-left-radius: 10px;
+  }
+  #js {
+    display: inline;
+    background-color: #ceaf00;
+    border-top-left-radius: 5px;
+  }
+  #js:hover {
+    background-color: #FFD700;
+    border-top-left-radius: 10px;
+  }
+  #jsmob {
+    display: none;
+  }
+  #shtml:hover {
+    color: #ff2f00;
+    text-decoration: underline;
+  }
+  #scss:hover {
+    color: #0021a3;
+    text-decoration: underline;
+  }
+  #sjs:hover {
+    color: #ceaf00;
+    text-decoration: underline;
+  }
 }
-Tela grande (desktops pequenos)
+/* Tela grande (desktops pequenos) */
 @media (min-width: 992px) and (max-width: 1200px) {
+  main {
+    width: 80vw;
+  }
+  #inicial {
+    background-color: rgb(0, 159, 159);
+    border-top-left-radius: 5px;
+  }
+  #inicial:hover {
+    background-color: aqua;
+    border-top-left-radius: 10px;
+  }
+  #html {
+    background-color: #a41e00;
+    border-top-left-radius: 5px;
+  }
+  #html:hover {
+    background-color: red;
+    border-top-left-radius: 10px;
+  }
+  #css {
+    background-color: #0051a8;
+    border-top-left-radius: 5px;
+  }
+  #css:hover {
+    background-color: #007BFF;
+    border-top-left-radius: 10px;
+  }
+  #js {
+    display: inline;
+    background-color: #ceaf00;
+    border-top-left-radius: 5px;
+  }
+  #js:hover {
+    background-color: #FFD700;
+    border-top-left-radius: 10px;
+  }
+  #jsmob {
+    display: none;
+  }
+  #js {
+    display: inline;
+  }
+  #shtml:hover {
+    color: #ff2f00;
+    text-decoration: underline;
+  }
+  #scss:hover {
+    color: #0021a3;
+    text-decoration: underline;
+  }
+  #sjs:hover {
+    color: #ceaf00;
+    text-decoration: underline;
+  }
 }
-Tela extra grande (desktops grandes)
+/* Tela extra grande (desktops grandes) */
 @media (min-width: 1201px) {
+  main {
+    width: 60vw;
+  }
+  #inicial {
+    background-color: rgb(0, 159, 159);
+    border-top-left-radius: 5px;
+  }
+  #inicial:hover {
+    background-color: aqua;
+    border-top-left-radius: 10px;
+  }
+  #html {
+    background-color: #a41e00;
+    border-top-left-radius: 5px;
+  }
+  #html:hover {
+    background-color: red;
+    border-top-left-radius: 10px;
+  }
+  #css {
+    background-color: #0051a8;
+    border-top-left-radius: 5px;
+  }
+  #css:hover {
+    background-color: #007BFF;
+    border-top-left-radius: 10px;
+  }
+  #js {
+    display: inline;
+    background-color: #ceaf00;
+    border-top-left-radius: 5px;
+  }
+  #js:hover {
+    background-color: #FFD700;
+    border-top-left-radius: 10px;
+  }
+  #jsmob {
+    display: none;
+  }
+  #js {
+    display: inline;
+  }
+  #shtml:hover {
+    color: #ff2f00;
+    text-decoration: underline;
+  }
+  #scss:hover {
+    color: #0021a3;
+    text-decoration: underline;
+  }
+  #sjs:hover {
+    color: #ceaf00;
+    text-decoration: underline;
+  }
 }
- */
