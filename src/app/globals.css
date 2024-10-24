@@ -108,9 +108,11 @@ pre {
   padding: 10px;
   margin-bottom: 5px;
   border-radius: 10px;
-  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
   overflow-x: auto;
   max-width: 100%;
+  box-sizing: border-box;
 }
 ul {
   list-style-position: inside;
