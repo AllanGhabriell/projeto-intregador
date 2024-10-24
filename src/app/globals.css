@@ -181,7 +181,6 @@ footer {
   width: 100vw;
   color: white;
   text-align: center;
-  position: fixed;
 }
 /* Configuração para barra de pesquisa */
 @media (max-width: 320px) {
