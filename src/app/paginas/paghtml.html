@@ -28,7 +28,8 @@
                 <button id="btpesquisa">🔍︎</button>
             </div>
             <div id="nav_login">
-                <a href="paglogin.html" id="login">login</a>
+                <div id="nav_login">
+                    <a href="#" id="login" onclick="abrirTela()">login</a>
             </div>
     </nav>
     </header>
@@ -140,14 +141,40 @@
     
         <h2>Conclusão</h2>
         <p>O HTML é a base de tudo que você vê na web. Aprendê-lo abre as portas para o desenvolvimento web e permite que você crie experiências digitais atraentes. Com o conhecimento em HTML, você pode avançar para aprender CSS e JavaScript, expandindo suas habilidades e possibilidades na criação de sites. Comece a praticar hoje mesmo e explore o vasto mundo do desenvolvimento web!</p>
-        <form action="" id="coment">
-            <label for="icoment">Deixe um comentario:</label>
+        <form action="" class="coment">
+            <label for="icoment" class="coment">Deixe um comentario:</label>
             <br>
-            <textarea name="" id="icoment" placeholder="Seu comentario" maxlength="150" minlength="1"></textarea>
+            <textarea name="" class="coment" placeholder="Seu comentario" maxlength="150" minlength="1"></textarea>
             <br>
-            <button id="btcoment">Enviar</button>
-        </form>           
+            <button class="coment">Enviar</button>
+        </form>            
     </main>
     <footer>Criado por Allan e Miguel!</footer>
+    <!-- Formulário de Login -->
+    <div id="loginForm" style="display: none;">
+        <form id="form">
+            <label for="nomeUser">Usuário:</label>
+            <input type="text" id="nomeUser" required>
+            <br>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" required>
+            <button type="submit">Entrar</button>
+            <button type="button" id="closeForm" onclick="fecharTela()">Fechar</button>
+        </form>
+    </div>
+    <script>
+        const botaoLogin = document.getElementById
+        ('login')
+        const caixaLogin = document.getElementById('loginForm')
+        const botaoFechar = document.getElementById('closeForm')
+        
+        function fecharTela () {
+            caixaLogin.style.display = 'none'
+        }
+        function abrirTela () {
+            const caixaLogin = document.getElementById('loginForm')
+            caixaLogin.style.display = 'flex'
+        }
+    </script>
 </body>
 </html>

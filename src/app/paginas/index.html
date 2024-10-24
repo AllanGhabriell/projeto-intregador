@@ -25,9 +25,9 @@
                 </form>
             </div>
             <div id="nav_login">
-                <a href="paglogin.html" id="login">login</a>
+                <a href="#" id="login" onclick="abrirTela()">login</a>
             </div>
-    </nav>
+        </nav>
     </header>
     <main>
         <h1>Como se Tornar um Desenvolvedor Web</h1>
@@ -71,24 +71,44 @@
         
         <h2>Conclusão</h2>
         <p>Tornar-se um desenvolvedor web é uma jornada que exige dedicação, curiosidade e prática. Com as ferramentas e recursos certos, você pode construir uma carreira gratificante e cheia de oportunidades. Comece hoje mesmo sua jornada e transforme suas ideias em realidade na web!</p>
-        <form action="" id="coment">
-            <label for="icoment">Deixe um comentario:</label>
+        
+        <form action="" class="coment">
+            <label for="icoment" class="coment">Deixe um comentario:</label>
             <br>
-            <textarea name="" id="icoment" placeholder="Seu comentario" maxlength="150" minlength="1"></textarea>
+            <textarea name="" class="coment" placeholder="Seu comentario" maxlength="150" minlength="1"></textarea>
             <br>
-            <button id="btcoment">Enviar</button>
+            <button class="coment">Enviar</button>
         </form>            
     </main>
     <footer>Criado por Allan e Miguel!</footer>
-<!--     <script>
-        function butaoJs() {
-            const botao = document.getElementById('js')
-            if (window.innerWidth < 400) {
-                botao.innerText = 'Js'
-            } else {
-                botao.innerText = 'JavaScript'
-            }
+        <!-- Formulário de Login -->
+        <div id="loginForm" style="display: none;">
+            <form id="form">
+                <label for="nomeUser">Usuário:</label>
+                <br>
+                <input type="email" id="nomeUser" required placeholder="Seu E-mail">
+                <br>
+                <label for="senha">Senha:</label>
+                <br>
+                <input type="password" id="senha" required placeholder="Sua senha">
+                <br>
+                <button type="submit" class="btlogin">Entrar</button>
+                <button type="button" id="closeForm" onclick="fecharTela()" class="btlogin">Sair</button>
+            </form>
+        </div>
+    <script>
+        const botaoLogin = document.getElementById
+        ('login')
+        const caixaLogin = document.getElementById('loginForm')
+        const botaoFechar = document.getElementById('closeForm')
+        
+        function fecharTela () {
+            caixaLogin.style.display = 'none'
         }
-    </script> -->
+        function abrirTela () {
+            const caixaLogin = document.getElementById('loginForm')
+            caixaLogin.style.display = 'flex'
+        }
+    </script>
 </body>
 </html>

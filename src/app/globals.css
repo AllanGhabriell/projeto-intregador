@@ -106,6 +106,46 @@ nav a {
   background-color: #949494;
   border-top-right-radius: 10px;
 }
+#loginForm {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100; /* Para garantir que fique acima de outros elementos */
+}
+#form {
+  border: 1px solid white;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 30px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+#form input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
+.btlogin {
+  padding: 5px;
+  margin-top: 5px;
+  margin-right: 3px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  background-color: #0051a8;
+  transition-duration: .3s;
+}
+.btlogin:active {
+  background-color: #0021a3;
+}
 main {
   width: 90vw;
   margin: auto;
@@ -142,16 +182,16 @@ pre {
 ul {
   list-style-position: inside;
 }
-form#coment {
+form.coment {
   background-color: #181E40;
   padding: 10px;
   border-radius: 15px;
 }
-label {
+label.coment {
   color: white;
   font-size: 14px;
 }
-textarea {
+textarea.coment {
   width: 80%;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -163,17 +203,17 @@ textarea {
   border: none;
   border-radius: 4px;
 }
-textarea::-webkit-input-placeholder {
+textarea.coment::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.658);
 }
-#btcoment {
+button.coment {
   border: none;
   background-color: #BFA62A;
   color: white;
   padding: 5px;
   border-radius: 10px;
 }
-#btcoment:active {
+button.coment:active {
   background-color: #7f6f1e;
 }
 footer {
@@ -207,6 +247,9 @@ footer {
   #login:hover {
     background-color: #949494;
     border-top-right-radius: 10px;
+  }
+  .btlogin:hover {
+    background-color: #0021a3;
   }
   main {
     width: 80vw;
@@ -273,6 +316,9 @@ footer {
   #login:hover {
     background-color: #949494;
     border-top-right-radius: 10px;
+  }
+  .btlogin:hover {
+    background-color: #0021a3;
   }
   main {
     width: 80vw;
@@ -342,6 +388,9 @@ footer {
   #login:hover {
     background-color: #949494;
     border-top-right-radius: 10px;
+  }
+  .btlogin:hover {
+    background-color: #0021a3;
   }
   main {
     width: 60vw;
