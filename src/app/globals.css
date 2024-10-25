@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Playwrite+DE+Grund:wght@100..400&family=Share+Tech&display=swap');
 :root {
   --cor1: #007BFF;
   --cor2: #FFD700;
@@ -25,20 +25,25 @@ header {
 header h1 {
   text-align: center;
   padding-top: 10px;
+  font-family: 'Bungee';
 }
 nav {
   background-color: rgba(0, 0, 0, 0.561);
   margin-top: 10px;
   padding-left: 5px;
   display: flex;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: flex-end;
+  font-family: "Share Tech";
+  font-weight: bold;
 }
 nav a {
   color: white;
   text-decoration: none;
   padding: 3px 5px 0px 5px;
   transition-duration: 0.5s;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.419);
 }
 #inicial {
   background-color: rgb(0, 159, 159);
@@ -112,11 +117,18 @@ nav a {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 100; /* Para garantir que fique acima de outros elementos */
+  z-index: 1;
+}
+#telaEscura {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
 }
 #form {
   border: 1px solid white;
@@ -133,18 +145,31 @@ nav a {
   border: none;
   padding: 5px;
 }
-.btlogin {
+#btEnter {
   padding: 5px;
   margin-top: 5px;
   margin-right: 3px;
   border: none;
   color: white;
   border-radius: 5px;
-  background-color: #0051a8;
+  background-color: #0021a3;
   transition-duration: .3s;
 }
-.btlogin:active {
-  background-color: #0021a3;
+#btEnter:active {
+  background-color: #0051a8;
+}
+#btFechar {
+  padding: 5px;
+  margin-top: 5px;
+  margin-right: 3px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  background-color: #a41e00;
+  transition-duration: .3s;
+}
+#btFechar:active {
+  background-color: #ff2f00;
 }
 main {
   width: 90vw;
@@ -229,7 +254,7 @@ footer {
   }
 }
 /* Tela média (tablets) */
-@media (min-width: 420px) and (max-width: 991px) {
+@media (min-width: 434px) and (max-width: 991px) {
   nav {
     cursor: pointer;
   }
@@ -248,11 +273,40 @@ footer {
     background-color: #949494;
     border-top-right-radius: 10px;
   }
-  .btlogin:hover {
-    background-color: #0021a3;
+  #form {
+    display: flex;
+    flex-flow: column nowrap;
+
+  }
+  .labelLogin {
+    text-align: center;
+  }
+  .buttons_login {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  #btEnter {
+    flex-grow: 1;
+  }
+  #btFechar {
+    flex-grow: 1;
+  }
+  #form input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 100px 5px 5px;
+  }
+  #btEnter:hover {
+    background-color: #0051a8;
+  }
+  #btFechar:hover {
+    background-color: #ff2f00;
   }
   main {
-    width: 80vw;
+    width: 60vw;
   }
   #inicial {
     background-color: rgb(0, 159, 159);
@@ -317,11 +371,42 @@ footer {
     background-color: #949494;
     border-top-right-radius: 10px;
   }
-  .btlogin:hover {
-    background-color: #0021a3;
+  #form {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .labelLogin {
+    text-align: center;
+  }
+  .buttons_login {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  #btEnter {
+    flex-grow: 1;
+  }
+  #btFechar {
+    flex-grow: 1;
+  }
+  .labelLogin {
+    align-self: center;
+  }
+  #form input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 150px 5px 5px;
+  }
+  #btEnter:hover {
+    background-color: #0051a8;
+  }
+  #btFechar:hover {
+    background-color: #ff2f00;
   }
   main {
-    width: 80vw;
+    width: 60vw;
   }
   #inicial {
     background-color: rgb(0, 159, 159);
@@ -389,8 +474,39 @@ footer {
     background-color: #949494;
     border-top-right-radius: 10px;
   }
-  .btlogin:hover {
-    background-color: #0021a3;
+  #form {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .labelLogin {
+    text-align: center;
+  }
+  .buttons_login {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  #btEnter {
+    flex-grow: 1;
+  }
+  #btFechar {
+    flex-grow: 1;
+  }
+  .labelLogin {
+    align-self: center;
+  }
+  #form input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 170px 5px 5px;
+  }
+  #btEnter:hover {
+    background-color: #0051a8;
+  }
+  #btFechar:hover {
+    background-color: #ff2f00;
   }
   main {
     width: 60vw;

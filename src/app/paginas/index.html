@@ -82,32 +82,41 @@
     </main>
     <footer>Criado por Allan e Miguel!</footer>
         <!-- Formulário de Login -->
-        <div id="loginForm" style="display: none;">
-            <form id="form">
+    <div id="loginForm" style="display: none;">
+        <form id="form">
+            <div class="labelLogin">
                 <label for="nomeUser">Usuário:</label>
                 <br>
                 <input type="email" id="nomeUser" required placeholder="Seu E-mail">
-                <br>
+            </div>
+            <div class="labelLogin">
                 <label for="senha">Senha:</label>
                 <br>
                 <input type="password" id="senha" required placeholder="Sua senha">
                 <br>
-                <button type="submit" class="btlogin">Entrar</button>
-                <button type="button" id="closeForm" onclick="fecharTela()" class="btlogin">Sair</button>
-            </form>
-        </div>
+            </div>
+            <div class="buttons_login">
+                <button type="submit" id="btEnter">Entrar</button>
+                <button type="button" id="btFechar" onclick="fecharTela()" class="btlogin">Sair</button>
+            </div>
+        </form>
+    </div>
+    <div id="telaEscura" style="display: none;"></div>
     <script>
         const botaoLogin = document.getElementById
         ('login')
         const caixaLogin = document.getElementById('loginForm')
-        const botaoFechar = document.getElementById('closeForm')
+        const botaoFechar = document.getElementById('btFechar')
+        const telaEscura = document.getElementById('telaEscura')
         
         function fecharTela () {
             caixaLogin.style.display = 'none'
+            telaEscura.style.display = 'none'
         }
         function abrirTela () {
             const caixaLogin = document.getElementById('loginForm')
             caixaLogin.style.display = 'flex'
+            telaEscura.style.display = 'flex'
         }
     </script>
 </body>
